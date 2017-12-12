@@ -23,5 +23,5 @@ for (i = 0; i < sections.length; i++) {
 
 function sectionSelect (){
     let sectionOutput = event.target.innerHTML;
-    console.log("You clicked this section", sectionOutput)
+    output.innerHTML = `You clicked on the ${sectionOutput} section.`
 };
