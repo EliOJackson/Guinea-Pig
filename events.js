@@ -1,5 +1,4 @@
 
-// When any section is clicked the output target text should be "You clicked on the {text of the section} section"
 // When the mouse is over the h1 tag, the output element should contain the text "You moved your mouse over the header".
 // When the mouse leaves the h1 tag, the output element should contain the text "You left me!!".
 // When you type characters into the input field, the output element should mirror the text in the input field.
@@ -13,3 +12,16 @@
 
 //Out-put variable 
 let output = document.getElementById("output-target");
+
+
+// When any section is clicked the output target text should be "You clicked on the {text of the section} section"
+let sections = document.getElementsByClassName("article-section");
+
+for (i = 0; i < sections.length; i++) {
+    sections[i].addEventListener ("click", sectionSelect)
+}
+
+function sectionSelect (){
+    let sectionOutput = event.target.innerHTML;
+    console.log("You clicked this section", sectionOutput)
+};
