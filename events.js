@@ -1,5 +1,4 @@
 
-// When you type characters into the input field, the output element should mirror the text in the input field.
 // When you click the "Add color" button, the guinea-pig element's text color should change to blue.
 // When you click the "Hulkify" button, the guinea-pig element's font size should become much larger.
 // When you click the "Capture it" button, the guinea-pig element should have a border added to it.
@@ -35,4 +34,11 @@ heading.addEventListener("mouseover", function(event) {
 
 heading.addEventListener("mouseout", function(event) {
     output.innerHTML = "You left me!"
+});
+
+// When you type characters into the input field, the output element should mirror the text in the input field.
+
+let textInput = document.getElementById("keypress-input");
+textInput.addEventListener("input", function () {
+    output.innerHTML = textInput.value;
 });
