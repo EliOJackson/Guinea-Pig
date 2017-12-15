@@ -1,5 +1,4 @@
 
-// When you click the "Add color" button, the guinea-pig element's text color should change to blue.
 // When you click the "Hulkify" button, the guinea-pig element's font size should become much larger.
 // When you click the "Capture it" button, the guinea-pig element should have a border added to it.
 // When you click the "Rounded" button, the guinea-pig element's border should become rounded.
@@ -42,3 +41,11 @@ let textInput = document.getElementById("keypress-input");
 textInput.addEventListener("input", function () {
     output.innerHTML = textInput.value;
 });
+
+
+// When you click the "Add color" button, the guinea-pig element's text color should change to blue.
+let addColor = document.getElementById("add-color");
+addColor.addEventListener("click", function () {
+    output.classList.toggle("blue");
+});
+
