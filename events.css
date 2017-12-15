@@ -9,3 +9,7 @@
 .border{
     border: solid 5px pink;
 }
+
+.border-round {
+    border-radius: 100px;
+}

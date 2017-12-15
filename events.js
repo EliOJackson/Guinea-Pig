@@ -57,4 +57,9 @@ let border = document.getElementById("add-border");
 border.addEventListener("click", function () {
     output.classList.toggle("border");
 });
+
 // When you click the "Rounded" button, the guinea-pig element's border should become rounded.
+let borderRound = document.getElementById("add-rounding");
+borderRound.addEventListener("click", function () {
+    output.classList.toggle("border-round");
+});
