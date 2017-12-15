@@ -13,3 +13,16 @@
 .border-round {
     border-radius: 100px;
 }
+
+.bold {
+    font-weight: bold;
+}
+
+.boldItal {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.block {
+    display: block;
+}
