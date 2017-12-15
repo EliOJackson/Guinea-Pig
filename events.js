@@ -1,5 +1,4 @@
 
-// When you click the "Hulkify" button, the guinea-pig element's font size should become much larger.
 // When you click the "Capture it" button, the guinea-pig element should have a border added to it.
 // When you click the "Rounded" button, the guinea-pig element's border should become rounded.
 // The first section's text should be bold.
@@ -49,3 +48,8 @@ addColor.addEventListener("click", function () {
     output.classList.toggle("blue");
 });
 
+// When you click the "Hulkify" button, the guinea-pig element's font size should become much larger.
+let hulkify = document.getElementById("make-large");
+hulkify.addEventListener("click", function () {
+    output.classList.toggle("hulk");
+});
