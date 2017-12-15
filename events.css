@@ -5,3 +5,7 @@
 .hulk {
     font-size: 250%;
 }
+
+.border{
+    border: solid 5px pink;
+}

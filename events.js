@@ -1,6 +1,4 @@
 
-// When you click the "Capture it" button, the guinea-pig element should have a border added to it.
-// When you click the "Rounded" button, the guinea-pig element's border should become rounded.
 // The first section's text should be bold.
 // The last section's text should be bold and italicized.
 // Make the buttons stop appearing next to each other as inline elements. Change them into block elements.
@@ -53,3 +51,10 @@ let hulkify = document.getElementById("make-large");
 hulkify.addEventListener("click", function () {
     output.classList.toggle("hulk");
 });
+
+// When you click the "Capture it" button, the guinea-pig element should have a border added to it.
+let border = document.getElementById("add-border");
+border.addEventListener("click", function () {
+    output.classList.toggle("border");
+});
+// When you click the "Rounded" button, the guinea-pig element's border should become rounded.
